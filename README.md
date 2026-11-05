@@ -21,7 +21,7 @@ JavaScript – Functionality and interactivity.
 🚀 Getting Started
 Clone the repository
 bash
-git clone https://github.com/YOUR-USERNAME/task-organizer.git
+git clone https://github.com/AromCode/task-organizer.git
 
 Navigate to the project folder
 bash
