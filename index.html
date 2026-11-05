@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mi organizador</title>
+    <link rel="icon" href="tareas.png" type="icon">
+
+    <!-- Conexión con CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>📋 Mi Organizador diario</h1>
+
+        <!-- Fecha actual -->
+        <div class="fecha" id="fecha"></div>
+
+        <!-- Aviso de tareas pendientes del día anterior -->
+        <div class="aviso" id="aviso"></div>
+
+        <!-- Formulario para agregar tareas -->
+        <div class="formulario">
+
+            <input
+                type="text"
+                id="nuevaTarea"
+                placeholder="¿Qué tienes que hacer?"
+                autocomplete="off"
+            >
+
+            <button
+                type="button"
+                class="btn-agregar"
+                onclick="agregarTarea()"
+            >
+                Agregar
+            </button>
+
+        </div>
+
+        <!-- Lista de tareas pendientes -->
+        <section>
+
+            <h3>📝 Pendientes</h3>
+
+            <ul id="listaPendientes"></ul>
+
+        </section>
+
+        <!-- Lista de tareas completadas -->
+        <section>
+
+            <h3>✅ Completadas</h3>
+
+            <ul id="listaCompletadas"></ul>
+
+        </section>
+
+        <!-- Contador de tareas -->
+        <div class="contador" id="contador"></div>
+
+        <p class="footer">Desarrollado por AromFolk ❤️</p>
+    </div>
+
+    <!-- Conexión con JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
